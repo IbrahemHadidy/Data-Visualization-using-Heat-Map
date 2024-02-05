@@ -1,0 +1,33 @@
+body {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-container {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: fit-content;
+  max-height: fit-content;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#tooltip {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  padding: 10px;
+  background-color: #b3b3b3;
+  color: white;
+  pointer-events: none;
+  width: fit-content;
+  text-align: left;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
